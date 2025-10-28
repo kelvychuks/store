@@ -1,9 +1,5 @@
-package com.codewithkelvin.store.mappers;
+package com.codewithkelvin.store.users;
 
-import com.codewithkelvin.store.dtos.RegisterUserRequest;
-import com.codewithkelvin.store.dtos.UpdateUserRequest;
-import com.codewithkelvin.store.users.UserDto;
-import com.codewithkelvin.store.entities.User;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
 

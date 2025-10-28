@@ -1,10 +1,6 @@
-package com.codewithkelvin.store.controllers;
+package com.codewithkelvin.store.products;
 
 import com.codewithkelvin.store.orders.ProductDto;
-import com.codewithkelvin.store.entities.Product;
-import com.codewithkelvin.store.mappers.ProductMapper;
-import com.codewithkelvin.store.repositories.CategoryRepository;
-import com.codewithkelvin.store.repositories.ProductRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

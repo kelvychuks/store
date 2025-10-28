@@ -1,12 +1,8 @@
-package com.codewithkelvin.store.controllers;
+package com.codewithkelvin.store.auth;
 
-import com.codewithkelvin.store.config.JwtConfig;
-import com.codewithkelvin.store.dtos.JwtResponse;
-import com.codewithkelvin.store.dtos.LoginRequest;
-import com.codewithkelvin.store.dtos.UserDto;
-import com.codewithkelvin.store.mappers.UserMapper;
-import com.codewithkelvin.store.repositories.UserRepository;
-import com.codewithkelvin.store.services.JwtService;
+import com.codewithkelvin.store.users.UserDto;
+import com.codewithkelvin.store.users.UserMapper;
+import com.codewithkelvin.store.users.UserRepository;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;

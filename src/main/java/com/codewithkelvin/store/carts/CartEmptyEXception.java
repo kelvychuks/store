@@ -1,4 +1,4 @@
-package com.codewithkelvin.store.exceptions;
+package com.codewithkelvin.store.carts;
 
 public class CartEmptyEXception extends RuntimeException {
     public CartEmptyEXception(){

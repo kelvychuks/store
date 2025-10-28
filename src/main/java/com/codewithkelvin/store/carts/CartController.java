@@ -1,17 +1,6 @@
-package com.codewithkelvin.store.controllers;
+package com.codewithkelvin.store.carts;
 
-import com.codewithkelvin.store.dtos.AddItemToCartRequest;
-import com.codewithkelvin.store.dtos.CartDto;
-import com.codewithkelvin.store.dtos.CartItemDto;
-import com.codewithkelvin.store.dtos.UpdateCartItemRequest;
-import com.codewithkelvin.store.entities.Cart;
-import com.codewithkelvin.store.entities.CartItem;
-import com.codewithkelvin.store.exceptions.CartNotFoundException;
-import com.codewithkelvin.store.exceptions.ProductNotFoundException;
-import com.codewithkelvin.store.mappers.CartMapper;
-import com.codewithkelvin.store.repositories.CartRepository;
-import com.codewithkelvin.store.repositories.ProductRepository;
-import com.codewithkelvin.store.services.CartService;
+import com.codewithkelvin.store.products.ProductNotFoundException;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

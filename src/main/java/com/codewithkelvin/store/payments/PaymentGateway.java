@@ -1,7 +1,6 @@
-package com.codewithkelvin.store.services;
+package com.codewithkelvin.store.payments;
 
-import com.codewithkelvin.store.entities.Order;
-import com.codewithkelvin.store.payments.CheckoutSession;
+import com.codewithkelvin.store.orders.Order;
 
 import java.util.Optional;
 

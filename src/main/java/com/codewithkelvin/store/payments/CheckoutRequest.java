@@ -1,4 +1,4 @@
-package com.codewithkelvin.store.dtos;
+package com.codewithkelvin.store.payments;
 
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;

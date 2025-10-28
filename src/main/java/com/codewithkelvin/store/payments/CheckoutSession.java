@@ -1,4 +1,4 @@
-package com.codewithkelvin.store.services;
+package com.codewithkelvin.store.payments;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

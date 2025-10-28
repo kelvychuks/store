@@ -1,7 +1,6 @@
-package com.codewithkelvin.store.config;
+package com.codewithkelvin.store.auth;
 
-import com.codewithkelvin.store.entities.Role;
-import com.codewithkelvin.store.filters.JwtAuthenticationFilter;
+import com.codewithkelvin.store.users.Role;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

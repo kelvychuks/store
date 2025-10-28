@@ -1,7 +1,5 @@
-package com.codewithkelvin.store.mappers;
+package com.codewithkelvin.store.orders;
 
-import com.codewithkelvin.store.dtos.OrderDto;
-import com.codewithkelvin.store.entities.Order;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")

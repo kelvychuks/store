@@ -1,4 +1,4 @@
-package com.codewithkelvin.store.filters;
+package com.codewithkelvin.store.common;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

@@ -1,4 +1,4 @@
-package com.codewithkelvin.store.entities;
+package com.codewithkelvin.store.products;
 
 import jakarta.persistence.*;
 import lombok.*;

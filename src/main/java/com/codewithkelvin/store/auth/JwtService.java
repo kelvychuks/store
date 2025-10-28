@@ -1,7 +1,6 @@
-package com.codewithkelvin.store.services;
+package com.codewithkelvin.store.auth;
 
-import com.codewithkelvin.store.config.JwtConfig;
-import com.codewithkelvin.store.entities.User;
+import com.codewithkelvin.store.users.User;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.Jwts;

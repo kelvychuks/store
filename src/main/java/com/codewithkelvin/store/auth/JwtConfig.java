@@ -1,4 +1,4 @@
-package com.codewithkelvin.store.config;
+package com.codewithkelvin.store.auth;
 
 import io.jsonwebtoken.security.Keys;
 import lombok.Data;

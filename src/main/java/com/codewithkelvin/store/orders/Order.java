@@ -1,5 +1,7 @@
-package com.codewithkelvin.store.entities;
+package com.codewithkelvin.store.orders;
 
+import com.codewithkelvin.store.carts.Cart;
+import com.codewithkelvin.store.users.User;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;

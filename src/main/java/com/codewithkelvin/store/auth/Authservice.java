@@ -1,7 +1,7 @@
-package com.codewithkelvin.store.services;
+package com.codewithkelvin.store.auth;
 
-import com.codewithkelvin.store.entities.User;
-import com.codewithkelvin.store.repositories.UserRepository;
+import com.codewithkelvin.store.users.User;
+import com.codewithkelvin.store.users.UserRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;

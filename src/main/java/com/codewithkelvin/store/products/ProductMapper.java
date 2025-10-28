@@ -1,7 +1,6 @@
-package com.codewithkelvin.store.mappers;
+package com.codewithkelvin.store.products;
 
 import com.codewithkelvin.store.orders.ProductDto;
-import com.codewithkelvin.store.entities.Product;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingTarget;

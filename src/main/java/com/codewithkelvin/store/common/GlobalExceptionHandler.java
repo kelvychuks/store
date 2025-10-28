@@ -1,6 +1,5 @@
-package com.codewithkelvin.store.controllers;
+package com.codewithkelvin.store.common;
 
-import com.codewithkelvin.store.dtos.ErrorDto;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.web.bind.MethodArgumentNotValidException;

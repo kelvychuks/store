@@ -1,4 +1,4 @@
-package com.codewithkelvin.store.dtos;
+package com.codewithkelvin.store.users;
 
 import lombok.Data;
 

@@ -1,13 +1,7 @@
-package com.codewithkelvin.store.services;
+package com.codewithkelvin.store.carts;
 
-import com.codewithkelvin.store.dtos.CartDto;
-import com.codewithkelvin.store.dtos.CartItemDto;
-import com.codewithkelvin.store.entities.Cart;
-import com.codewithkelvin.store.exceptions.CartNotFoundException;
-import com.codewithkelvin.store.exceptions.ProductNotFoundException;
-import com.codewithkelvin.store.mappers.CartMapper;
-import com.codewithkelvin.store.repositories.CartRepository;
-import com.codewithkelvin.store.repositories.ProductRepository;
+import com.codewithkelvin.store.products.ProductNotFoundException;
+import com.codewithkelvin.store.products.ProductRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

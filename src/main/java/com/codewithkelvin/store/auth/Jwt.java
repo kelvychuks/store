@@ -1,6 +1,6 @@
-package com.codewithkelvin.store.services;
+package com.codewithkelvin.store.auth;
 
-import com.codewithkelvin.store.entities.Role;
+import com.codewithkelvin.store.users.Role;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 

@@ -1,12 +1,8 @@
-package com.codewithkelvin.store.services;
+package com.codewithkelvin.store.payments;
 
-import com.codewithkelvin.store.entities.Order;
-import com.codewithkelvin.store.entities.OrderItem;
-import com.codewithkelvin.store.entities.PaymentStatus;
-import com.codewithkelvin.store.payments.CheckoutSession;
-import com.codewithkelvin.store.payments.PaymentException;
-import com.codewithkelvin.store.payments.PaymentGateway;
-import com.codewithkelvin.store.payments.PaymentResult;
+import com.codewithkelvin.store.orders.Order;
+import com.codewithkelvin.store.orders.OrderItem;
+import com.codewithkelvin.store.orders.PaymentStatus;
 import com.stripe.exception.SignatureVerificationException;
 import com.stripe.exception.StripeException;
 import com.stripe.model.Event;

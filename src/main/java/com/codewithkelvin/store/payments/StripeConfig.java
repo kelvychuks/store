@@ -1,4 +1,4 @@
-package com.codewithkelvin.store.config;
+package com.codewithkelvin.store.payments;
 
 import com.stripe.Stripe;
 import jakarta.annotation.PostConstruct;

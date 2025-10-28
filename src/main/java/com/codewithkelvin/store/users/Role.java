@@ -1,4 +1,4 @@
-package com.codewithkelvin.store.entities;
+package com.codewithkelvin.store.users;
 
 public enum Role {
     USER,

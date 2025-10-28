@@ -1,4 +1,4 @@
-package com.codewithkelvin.store.exceptions;
+package com.codewithkelvin.store.payments;
 
 import lombok.NoArgsConstructor;
 

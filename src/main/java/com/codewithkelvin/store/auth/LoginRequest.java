@@ -1,4 +1,4 @@
-package com.codewithkelvin.store.dtos;
+package com.codewithkelvin.store.auth;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

@@ -1,6 +1,6 @@
-package com.codewithkelvin.store.services;
+package com.codewithkelvin.store.payments;
 
-import com.codewithkelvin.store.entities.PaymentStatus;
+import com.codewithkelvin.store.orders.PaymentStatus;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

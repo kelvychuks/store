@@ -1,6 +1,5 @@
-package com.codewithkelvin.store.repositories;
+package com.codewithkelvin.store.users;
 
-import com.codewithkelvin.store.users.Profile;
 import org.springframework.data.repository.CrudRepository;
 
 public interface ProfileRepository extends CrudRepository <Profile, Long> {

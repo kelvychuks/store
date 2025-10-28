@@ -1,13 +1,12 @@
-package com.codewithkelvin.store.services;
+package com.codewithkelvin.store.payments;
 
-import com.codewithkelvin.store.payments.CheckoutRequest;
-import com.codewithkelvin.store.payments.CheckoutResponse;
-import com.codewithkelvin.store.entities.Order;
-import com.codewithkelvin.store.exceptions.CartEmptyEXception;
-import com.codewithkelvin.store.exceptions.CartNotFoundException;
-import com.codewithkelvin.store.payments.PaymentException;
-import com.codewithkelvin.store.repositories.CartRepository;
-import com.codewithkelvin.store.repositories.OrderRepository;
+import com.codewithkelvin.store.orders.Order;
+import com.codewithkelvin.store.carts.CartEmptyEXception;
+import com.codewithkelvin.store.carts.CartNotFoundException;
+import com.codewithkelvin.store.carts.CartRepository;
+import com.codewithkelvin.store.orders.OrderRepository;
+import com.codewithkelvin.store.auth.Authservice;
+import com.codewithkelvin.store.carts.CartService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -1,5 +1,6 @@
-package com.codewithkelvin.store.entities;
+package com.codewithkelvin.store.orders;
 
+import com.codewithkelvin.store.products.Product;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
@@ -22,7 +23,7 @@ public class OrderItem {
     @NotNull
     @ManyToOne
     @JoinColumn(name = "order_id")
-    private Order order;
+    private com.codewithkelvin.store.orders.Order order;
 
     @NotNull
     @ManyToOne
@@ -41,7 +42,7 @@ public class OrderItem {
     @Column(name = "total_price")
     private BigDecimal totalPrice;
 
-    public OrderItem(Order order, Product product, Integer quantity) {
+    public OrderItem(com.codewithkelvin.store.orders.Order order, Product product, Integer quantity) {
         this.order = order;
         this.product = product;
         this.quantity = quantity;

@@ -1,6 +1,5 @@
-package com.codewithkelvin.store.services;
+package com.codewithkelvin.store.users;
 
-import com.codewithkelvin.store.repositories.UserRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;

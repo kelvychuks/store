@@ -1,9 +1,5 @@
-package com.codewithkelvin.store.mappers;
+package com.codewithkelvin.store.carts;
 
-import com.codewithkelvin.store.carts.CartDto;
-import com.codewithkelvin.store.carts.CartItemDto;
-import com.codewithkelvin.store.entities.Cart;
-import com.codewithkelvin.store.entities.CartItem;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 

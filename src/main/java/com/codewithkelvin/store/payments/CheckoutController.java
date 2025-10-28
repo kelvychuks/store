@@ -1,14 +1,8 @@
-package com.codewithkelvin.store.controllers;
+package com.codewithkelvin.store.payments;
 
-import com.codewithkelvin.store.dtos.CheckoutRequest;
-import com.codewithkelvin.store.dtos.CheckoutResponse;
-import com.codewithkelvin.store.dtos.ErrorDto;
-import com.codewithkelvin.store.exceptions.CartEmptyEXception;
-import com.codewithkelvin.store.exceptions.CartNotFoundException;
-import com.codewithkelvin.store.exceptions.PaymentException;
-import com.codewithkelvin.store.repositories.OrderRepository;
-import com.codewithkelvin.store.services.CheckoutService;
-import com.codewithkelvin.store.services.WebhookRequest;
+import com.codewithkelvin.store.common.ErrorDto;
+import com.codewithkelvin.store.carts.CartEmptyEXception;
+import com.codewithkelvin.store.carts.CartNotFoundException;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -24,7 +18,6 @@ import java.util.Map;
 public class CheckoutController {
 
     private final CheckoutService checkoutService;
-    private final OrderRepository orderRepository;
 
 
     @PostMapping

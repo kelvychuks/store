@@ -1,7 +1,6 @@
-package com.codewithkelvin.store.repositories;
+package com.codewithkelvin.store.orders;
 
-import com.codewithkelvin.store.entities.Order;
-import com.codewithkelvin.store.entities.User;
+import com.codewithkelvin.store.users.User;
 import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

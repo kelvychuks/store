@@ -1,12 +1,5 @@
-package com.codewithkelvin.store.controllers;
+package com.codewithkelvin.store.users;
 
-import com.codewithkelvin.store.dtos.ChangePasswordRequest;
-import com.codewithkelvin.store.dtos.RegisterUserRequest;
-import com.codewithkelvin.store.dtos.UpdateUserRequest;
-import com.codewithkelvin.store.dtos.UserDto;
-import com.codewithkelvin.store.entities.Role;
-import com.codewithkelvin.store.mappers.UserMapper;
-import com.codewithkelvin.store.repositories.UserRepository;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Sort;
@@ -16,6 +9,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -29,7 +23,7 @@ public class UserController {
     private final PasswordEncoder passwordEncoder;
 
     @GetMapping
-    public Iterable<UserDto> getAllUsers(@RequestHeader(name = "x-auth-token") String authToken,  @RequestParam(required = false, defaultValue = "", name = "sort") String sort) {
+    public List<UserDto> getAllUsers(@RequestHeader(name = "x-auth-token") String authToken, @RequestParam(required = false, defaultValue = "", name = "sort") String sort) {
         System.out.println(authToken);
         if(!Set.of("name","email").contains(sort))
             sort = "name";

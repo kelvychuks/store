@@ -1,4 +1,4 @@
-package com.codewithkelvin.store.dtos;
+package com.codewithkelvin.store.carts;
 
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;

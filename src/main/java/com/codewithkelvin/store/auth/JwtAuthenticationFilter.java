@@ -1,6 +1,5 @@
-package com.codewithkelvin.store.filters;
+package com.codewithkelvin.store.auth;
 
-import com.codewithkelvin.store.auth.JwtService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

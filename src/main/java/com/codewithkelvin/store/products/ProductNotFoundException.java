@@ -1,4 +1,4 @@
-package com.codewithkelvin.store.exceptions;
+package com.codewithkelvin.store.products;
 
 public class ProductNotFoundException extends RuntimeException{
 }

@@ -1,4 +1,4 @@
-package com.codewithkelvin.store.exceptions;
+package com.codewithkelvin.store.orders;
 
 public class OrderNotFoundException extends RuntimeException{
     public OrderNotFoundException(){

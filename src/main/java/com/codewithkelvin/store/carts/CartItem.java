@@ -1,5 +1,6 @@
-package com.codewithkelvin.store.entities;
+package com.codewithkelvin.store.carts;
 
+import com.codewithkelvin.store.products.Product;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
