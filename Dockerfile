@@ -3,6 +3,6 @@ COPY . .
 RUN mvn clean package -DskipTests
 
 FROM openjdk:17.0.1-jdk-slim
-COPY -- from=build /target/store-1.0.0.jar store.jar
+COPY --from=build /app/target/store-1.0.0.jar store.jar
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","store.jar"]
