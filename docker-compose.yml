@@ -1,0 +1,38 @@
+# Local development stack: `docker compose up` and the API is on :8080 with a
+# migrated, seeded database. Nothing else needs installing.
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: store
+      POSTGRES_USER: store
+      POSTGRES_PASSWORD: store
+    ports:
+      - "5432:5432"
+    volumes:
+      - store-db-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U store -d store"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  api:
+    build: .
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: jdbc:postgresql://db:5432/store
+      DATABASE_USERNAME: store
+      DATABASE_PASSWORD: store
+      JWT_SECRET: ${JWT_SECRET:-local-development-secret-at-least-32-characters}
+      STRIPE_SECRET_KEY: ${STRIPE_SECRET_KEY:-sk_test_missing}
+      STRIPE_WEBHOOK_SECRET_KEY: ${STRIPE_WEBHOOK_SECRET_KEY:-whsec_missing}
+      WEBSITE_URL: ${WEBSITE_URL:-http://localhost:5173}
+      CORS_ALLOWED_ORIGINS: http://localhost:5173,http://localhost:3000
+    ports:
+      - "8080:8080"
+
+volumes:
+  store-db-data:

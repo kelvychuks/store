@@ -12,9 +12,10 @@ out/
 # ----------------------------------------
 .env
 *.env
-application*.yml
-application*.yaml
-application.properties
+# application.yaml IS committed: it holds no secrets, only env-var placeholders.
+# Machine-specific overrides go in application-local.yaml.
+application-local.yml
+application-local.yaml
 *.log
 
 
