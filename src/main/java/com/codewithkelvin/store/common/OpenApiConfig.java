@@ -9,9 +9,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * Swagger UI is the front door of the deployed demo, so it carries the
- * credentials and an "Authorize" button that actually works — a reviewer should
- * be able to log in and call a protected endpoint without reading the source.
+ * Swagger UI is the front door of the deployed demo, so it carries the demo
+ * credentials. A reviewer should be able to log in and call a protected endpoint
+ * without reading the source first.
  */
 @Configuration
 public class OpenApiConfig {
@@ -31,7 +31,7 @@ public class OpenApiConfig {
                                 (or `admin@store.dev` / `Admin1234!` for catalogue writes), then paste the \
                                 returned token into **Authorize** above.
 
-                                Payments run in Stripe test mode — card `4242 4242 4242 4242`, any future \
+                                Payments run in Stripe test mode: card `4242 4242 4242 4242`, any future \
                                 expiry, any CVC. No real money moves.
                                 """))
                 .addSecurityItem(new SecurityRequirement().addList(BEARER))

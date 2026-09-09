@@ -11,8 +11,8 @@ confirmation.
 
 **Live API:** <https://store-api-lldi.onrender.com> · **Swagger UI:** <https://store-api-lldi.onrender.com/swagger-ui/index.html> · **Storefront:** _coming soon_
 
-> The API is hosted on a free tier that sleeps after inactivity — the first
-> request can take 30–50 seconds while the instance wakes up. Everything after
+> The API is hosted on a free tier that sleeps after inactivity, so the first
+> request can take 30-50 seconds while the instance wakes up. Everything after
 > that is fast.
 
 ---
@@ -31,15 +31,15 @@ CVC. No real money moves.
 
 ## What it does
 
-- **Catalogue** — products and categories, public to read, admin-only to change.
-- **Anonymous carts** — a cart is created without an account and identified by a
+- **Catalogue.** Products and categories, public to read, admin-only to change.
+- **Anonymous carts.** A cart is created without an account and identified by a
   UUID, so a visitor can shop before signing up. Adding a product already in the
   cart increments the line rather than duplicating it.
-- **Authentication** — stateless JWT access tokens plus a refresh token in an
+- **Authentication.** Stateless JWT access tokens plus a refresh token in an
   HttpOnly cookie, with `USER` and `ADMIN` roles enforced at the filter chain.
-- **Orders** — an order is built from a cart, copying unit prices at the moment
+- **Orders.** An order is built from a cart, copying unit prices at the moment
   of purchase so later price changes can't rewrite history.
-- **Payments** — a Stripe Checkout session per order; the order only becomes
+- **Payments.** A Stripe Checkout session per order; the order only becomes
   `PAID` when Stripe's signed webhook says so, never on the browser redirect.
 
 ## Architecture
@@ -90,8 +90,8 @@ tells you the customer's browser reached a URL. `PaymentStatus` moves to `PAID`
 when Stripe's signature-verified webhook arrives.
 
 **Flyway owns the schema; Hibernate validates it.** `ddl-auto: validate` means
-the app refuses to start if the entities and the migrations have drifted apart —
-a much better failure than silently corrupting data with `update`.
+the app refuses to start if the entities and the migrations have drifted apart,
+which is a much better failure than silently corrupting data with `update`.
 
 **Tests use a real PostgreSQL.** Testcontainers starts one per run. The most
 valuable thing to test here is that the migrations apply and the entities match
@@ -109,7 +109,7 @@ docker compose up --build
 API on <http://localhost:8080>, Swagger UI on
 <http://localhost:8080/swagger-ui/index.html>, database migrated and seeded.
 
-**Without Docker** — a JDK 17 and any PostgreSQL the machine can reach, including
+**Without Docker.** A JDK 17 and any PostgreSQL the machine can reach, including
 a free hosted one:
 
 ```bash
@@ -123,7 +123,7 @@ Flyway creates and seeds the schema on first start, so an empty database is all
 that's needed.
 
 Configuration is read from environment variables with development defaults in
-`src/main/resources/application.yaml` — see `.env.example` for the full list.
+`src/main/resources/application.yaml`; see `.env.example` for the full list.
 
 **Tests:**
 

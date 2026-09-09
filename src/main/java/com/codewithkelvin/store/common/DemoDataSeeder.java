@@ -12,13 +12,13 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 /**
- * Creates the two logins documented in the README so anyone opening the
- * deployed demo can sign in without registering first.
- * <p>
- * The passwords are hashed here rather than in a migration because the hash has
- * to come from the same {@link PasswordEncoder} the login flow verifies with —
- * a hard-coded hash in SQL silently stops working the day the encoder changes.
- * Disabled by setting {@code SEED_DEMO_USERS=false}.
+ * Creates the two logins documented in the README so anyone opening the deployed
+ * demo can sign in without registering first.
+ *
+ * <p>Passwords are hashed here rather than in a migration because the hash has to
+ * come from the same {@link PasswordEncoder} the login flow verifies with. A
+ * hard-coded hash in SQL stops working the day the encoder changes. Disable with
+ * {@code SEED_DEMO_USERS=false}.
  */
 @Slf4j
 @Component
