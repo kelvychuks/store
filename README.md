@@ -9,7 +9,7 @@ E-commerce backend built with Java and Spring Boot: catalogue, anonymous carts,
 JWT authentication, order placement and Stripe checkout with webhook
 confirmation.
 
-**Live API:** _<add your Render URL>_ · **Swagger UI:** _<url>/swagger-ui.html_ · **Storefront:** _<add your Vercel URL>_
+**Live API:** <https://store-api-lldi.onrender.com> · **Swagger UI:** <https://store-api-lldi.onrender.com/swagger-ui/index.html> · **Storefront:** _coming soon_
 
 > The API is hosted on a free tier that sleeps after inactivity — the first
 > request can take 30–50 seconds while the instance wakes up. Everything after
@@ -107,7 +107,7 @@ docker compose up --build
 ```
 
 API on <http://localhost:8080>, Swagger UI on
-<http://localhost:8080/swagger-ui.html>, database migrated and seeded.
+<http://localhost:8080/swagger-ui/index.html>, database migrated and seeded.
 
 **Without Docker** — a JDK 17 and any PostgreSQL the machine can reach, including
 a free hosted one:
@@ -153,7 +153,7 @@ this passes on a JDK-only machine and runs in full in CI.
 | GET    | `/orders`                   | bearer    | The caller's orders                |
 | GET    | `/actuator/health`          | public    | Liveness/readiness                 |
 
-Full, interactive documentation is at `/swagger-ui.html`.
+Full, interactive documentation is at `/swagger-ui/index.html`.
 
 ## Deploying
 
