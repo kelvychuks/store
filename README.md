@@ -9,7 +9,7 @@ E-commerce backend built with Java and Spring Boot: catalogue, anonymous carts,
 JWT authentication, order placement and Stripe checkout with webhook
 confirmation.
 
-**Live API:** <https://store-api-lldi.onrender.com> · **Swagger UI:** <https://store-api-lldi.onrender.com/swagger-ui/index.html> · **Storefront:** _coming soon_
+**Live API:** <https://store-api-lldi.onrender.com> · **Swagger UI:** <https://store-api-lldi.onrender.com/swagger-ui/index.html>
 
 > The API is hosted on a free tier that sleeps after inactivity, so the first
 > request can take 30-50 seconds while the instance wakes up. Everything after
